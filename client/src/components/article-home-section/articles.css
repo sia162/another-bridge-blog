@@ -1,0 +1,138 @@
+@import url('http://fonts.cdnfonts.com/css/pecita');
+/* ARTICLES SECTION */
+
+.article-section {
+  /* height: 1190px; */
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.article-head {
+  font-family: var(--head-font);
+  font-size: 2.5rem;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.all-articles {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.article-con {
+  display: flex;
+  transition: all 0.2s ease-in;
+
+  /* new */
+  width: 614.4px;
+}
+.shadow {
+  transition: all 0.2s ease-in;
+  filter: grayscale(100%);
+}
+.article-con:hover {
+  box-shadow: -10px 11px 0px 2px #00000054 inset;
+}
+.shadow:hover {
+  box-shadow: 10px -9px 0px 2px #00000054 inset;
+  filter: none;
+}
+
+.article-con-rev {
+  flex-direction: row-reverse;
+  transition: all 0.2s ease-in;
+}
+.shadow-rev {
+  transition: all 0.2s ease-in;
+  filter: grayscale(100%);
+}
+.article-con-rev:hover {
+  box-shadow: 10px -9px 0px 2px #00000054 inset;
+}
+.shadow-rev:hover {
+  box-shadow: -10px 11px 0px 2px #00000054 inset;
+  filter: none;
+}
+
+.article-con img {
+  width: 20vw;
+  opacity: 0.9;
+}
+
+.article-con .con {
+  padding: 0px 23px;
+  padding-bottom: 20px;
+  text-align: center;
+  font-family: var(--article-con-font);
+  font-size: 0.9rem;
+}
+
+.below-contact {
+  background: rgb(29, 29, 29);
+  color: white;
+  display: flex;
+  justify-content: center;
+
+  min-height: 60vh;
+}
+
+.newsletter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+
+.details-contact {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.d-news {
+  margin: 5px 0px;
+}
+.d-con {
+  margin: 10px 0px;
+}
+
+.d-head,
+.news-head {
+  font-family: var(--head-font);
+}
+
+.d-sub,
+.news-email {
+  font-family: var(--content-font);
+  font-weight: bold;
+  color: rgb(161, 159, 159);
+  outline: none;
+}
+
+.news-email input {
+  width: 200px;
+  outline: none;
+}
+
+.all-icon-box {
+  display: flex;
+}
+
+.d-icon {
+  padding: 10px 0px;
+}
+
+.d-con i {
+  padding-right: 25px;
+}
+.d-con a {
+  text-decoration: none;
+}
+.d-con i:hover {
+  color: rgba(194, 16, 16, 0.658);
+}
