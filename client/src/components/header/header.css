@@ -1,0 +1,49 @@
+@import url('http://fonts.cdnfonts.com/css/pecita');
+
+.parallax {
+  background-image: url(../../images/bg4.jpg);
+
+  /* Set a specific height */
+  min-height: 300px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.home-content {
+  min-height: 350px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgb(0, 0, 0);
+}
+
+.title-head {
+  font-family: 'Pecita', sans-serif;
+  font-size: 4rem;
+}
+
+.home-content .line2 {
+  width: 30vw;
+  border: 1px solid;
+  color: rgb(15, 14, 14);
+  margin-top: 15px;
+  background: black;
+}
+
+.line2::before {
+  background-color: #a0a1a3;
+  content: '';
+  display: block;
+  height: 8px;
+  left: 50%;
+  margin: -7px 0 0 -60px;
+  position: relative;
+  top: 3px;
+  width: 120px;
+}

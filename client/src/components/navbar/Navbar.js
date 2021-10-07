@@ -1,28 +1,29 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './navbar.css';
-import '../../css/ultils.css';
-import '../../css/utilstwo.css';
+import '../../css/utils-blog.css';
+import '../../css/utils.css';
 
 const Navbar = () => {
   return (
     <div>
       <div className="navigation max-width-s m-auto">
-        <a href="/">
+        <Link to="/">
           <h2>Another Bridge</h2>
-        </a>
+        </Link>
 
         <ul className="nav-list">
           {/* <li>
             <a href="#">home.</a>
           </li> */}
           <li>
-            <a href="#">about alesa.</a>
+            <Link to="/about">about alesa.</Link>
           </li>
           <li>
-            <a href="#">all blogs.</a>
+            <Link to="/">all blogs.</Link>
           </li>
           <li>
-            <a href="#">let's talk.</a>
+            <Link to="/contact">let's talk.</Link>
           </li>
         </ul>
 
