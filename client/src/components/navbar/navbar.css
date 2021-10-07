@@ -1,0 +1,45 @@
+.navigation {
+  height: 60px;
+  padding: 0px 20px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navigation h2 {
+  font-family: var(--head-font);
+  font-size: 1.4rem;
+}
+.navigation a {
+  text-decoration: none;
+}
+
+.nav-list {
+  display: flex;
+}
+
+.nav-list li {
+  list-style: none;
+}
+
+.nav-list li a {
+  text-decoration: none;
+  padding: 2px 20px;
+  margin: 0px 35px;
+  font-family: var(--content-font);
+  font-weight: bold;
+  color: black;
+  font-size: 1.2rem;
+  transition: all 0.3 ease-in;
+}
+
+.nav-list li a:hover {
+  border-bottom: 1px solid grey;
+}
+
+.right-nav input {
+  font-family: var(--content-font);
+  font-weight: bold;
+  border: 1.6px solid;
+}
