@@ -2,6 +2,7 @@ import React from 'react';
 import './allarticles.css';
 import a1 from '../../images/a1.jpg';
 import a8 from '../../images/a8.jpg';
+import { Link } from 'react-router-dom';
 
 const Allarticles = () => {
   return (
@@ -9,7 +10,7 @@ const Allarticles = () => {
       <div className="all-articles-page">
         {/* start */}
 
-        <div className="shadow">
+        <div className="shadow-new">
           <div className="all-article-con">
             <img src={a1} alt="" loading="lazy" />
             <div className="con">
@@ -24,14 +25,14 @@ const Allarticles = () => {
                 possimus est ullam aperiam.
               </p>
               <p>7 June | 3min</p>
-              <a href="/blogpost.html">
+              <Link to="/blog/:id">
                 <button className="btn">Read More</button>
-              </a>
+              </Link>
             </div>
           </div>
         </div>
 
-        <div className="shadow">
+        <div className="shadow-new">
           <div className="all-article-con">
             <img src={a8} alt="" loading="lazy" />
             <div className="con">
@@ -46,9 +47,9 @@ const Allarticles = () => {
                 possimus est ullam aperiam.
               </p>
               <p>7 June | 3min</p>
-              <a href="/blogpost.html">
+              <Link to="/blog/:id">
                 <button className="btn">Read More</button>
-              </a>
+              </Link>
             </div>
           </div>
         </div>

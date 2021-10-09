@@ -4,6 +4,7 @@ import a1 from '../../images/a1.jpg';
 import a8 from '../../images/a8.jpg';
 import a3 from '../../images/a3.jpg';
 import a4 from '../../images/a4.jpg';
+import { Link } from 'react-router-dom';
 
 const Article = () => {
   return (
@@ -26,9 +27,9 @@ const Article = () => {
                 possimus est ullam aperiam.
               </p>
               <p>7 June | 3min</p>
-              <a href="/blogpost.html">
+              <Link to="/blog/:id">
                 <button className="btn">Read More</button>
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -48,9 +49,9 @@ const Article = () => {
                 possimus est ullam aperiam.
               </p>
               <p>7 June | 3min</p>
-              <a href="/blogpost.html">
+              <Link to="/blog/:id">
                 <button className="btn">Read More</button>
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -70,9 +71,9 @@ const Article = () => {
                 possimus est ullam aperiam.
               </p>
               <p>7 June | 3min</p>
-              <a href="/blogpost.html">
+              <Link to="/blog/:id">
                 <button className="btn">Read More</button>
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -92,9 +93,9 @@ const Article = () => {
                 possimus est ullam aperiam.
               </p>
               <p>7 June | 3min</p>
-              <a href="/blogpost.html">
+              <Link to="/blog/:id">
                 <button className="btn">Read More</button>
-              </a>
+              </Link>
             </div>
           </div>
         </div>

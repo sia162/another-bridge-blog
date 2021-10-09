@@ -1,7 +1,7 @@
 .edgelines1::before {
   content: '';
   position: absolute;
-  height: 262.7vh;
+  height: 141.5vh;
   width: 0.1vw;
   background-color: rgba(209, 209, 209, 0.534);
   left: 8vw;
@@ -10,7 +10,7 @@
 .edgelines2::before {
   content: '';
   position: absolute;
-  height: 262.7vh;
+  height: 141.5vh;
   width: 0.1vw;
   background-color: rgba(209, 209, 209, 0.534);
   right: 8vw;

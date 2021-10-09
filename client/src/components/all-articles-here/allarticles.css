@@ -19,7 +19,8 @@
   display: flex;
   transition: all 0.2s ease-in;
 }
-.shadow {
+
+.shadow-new {
   transition: all 0.2s ease-in;
   filter: grayscale(100%);
   margin-bottom: 20px;
@@ -29,7 +30,7 @@
   box-shadow: -10px 11px 0px 2px #00000054 inset;
 }
 
-.shadow:hover {
+.shadow-new:hover {
   box-shadow: 10px -9px 0px 2px #00000054 inset;
   filter: none;
 }

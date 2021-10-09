@@ -6,6 +6,7 @@ import Home from './components/pages/home/Home';
 import Footer from './components/footer/Footer';
 import FooterContact from './components/footer-contact/FooterContact';
 import Allblogpage from './components/pages/all-blogs-page/Allblogpage';
+import Single from './components/pages/single-blog-page/Single';
 
 function App() {
   return (
@@ -25,6 +26,9 @@ function App() {
           </Route>
           <Route exact path="/allblogs">
             <Allblogpage />
+          </Route>
+          <Route exact path="/blog/:id">
+            <Single />
           </Route>
         </Switch>
         <FooterContact />

@@ -1,0 +1,78 @@
+.blog-box {
+  display: flex;
+  width: 100vw;
+}
+
+.blog-con-box {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  align-items: center;
+}
+
+.blogpost-head {
+  padding-top: 50px;
+  font-family: var(--head-font);
+  font-size: 2.5rem;
+  text-align: center;
+  text-align: center;
+}
+
+.cont-sign {
+  font-family: var(--article-con-font);
+  padding: 16px 5px 28px 5px;
+}
+
+.blog-content {
+  padding: 3px 112px 17px 65px;
+  font-family: var(--article-con-font);
+  text-align: center;
+}
+
+.comment-box {
+  padding: 30px 1px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.alsoread {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30px;
+  background-color: rgba(245, 245, 245, 0.521);
+  margin: 20px;
+}
+
+.switching-button {
+  display: flex;
+}
+
+.switchpost {
+  margin: 20px 65px;
+}
+
+.switchpost .btn {
+  padding: 1px 30px;
+}
+
+.switchpost a,
+.comment-head {
+  font-family: var(--head-font);
+}
+
+.switch-head,
+.comment {
+  font-family: var(--article-con-font);
+}
+
+.blog-con-box .line2 {
+  width: 30vw;
+  border: 1px solid;
+  color: rgb(15, 14, 14);
+  margin-top: 44px;
+  background: black;
+}
