@@ -7,7 +7,7 @@ import '../../../css/utils.css';
 const Contact = () => {
   return (
     <div>
-      <div class="edgelines-h">
+      <div className="edgelines-h">
         <div className="contact-section max-width-s m-auto">
           <div className="contact-head">tell me what you think.</div>
 

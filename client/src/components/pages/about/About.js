@@ -9,22 +9,22 @@ import { Link } from 'react-router-dom';
 const About = () => {
   return (
     <div>
-      <div class="edgelines-h">
-        <div class="about-section max-width-s m-auto">
-          <div class="about-head">about alesa.</div>
+      <div className="edgelines-h">
+        <div className="about-section max-width-s m-auto">
+          <div className="about-head">about alesa.</div>
 
-          <div class="about-box ">
-            <div class="profile">
-              <img src={profileImg} alt="" class="imageprofile" />
+          <div className="about-box ">
+            <div className="profile">
+              <img src={profileImg} alt="" className="imageprofile" />
 
               <Link to="/contact">
-                <div class="overlay">
-                  <div class="text">connect with her.</div>
+                <div className="overlay">
+                  <div className="text">connect with her.</div>
                 </div>
               </Link>
             </div>
 
-            <div class="about-con about-box-item">
+            <div className="about-con about-box-item">
               <strong>hi! i'm alesa.</strong> i like to cook, write, play music,
               and take photos. i recently moved from brooklyn to a farm on the
               north dakota-minnesota border, where my husband is a

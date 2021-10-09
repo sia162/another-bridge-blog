@@ -17,6 +17,8 @@
 
 .nav-list {
   display: flex;
+  margin: 6px 0px;
+  padding-left: 42px;
 }
 
 .nav-list li {
@@ -42,4 +44,6 @@
   font-family: var(--content-font);
   font-weight: bold;
   border: 1.6px solid;
+  margin-right: 4px;
+  padding: 1px 2px;
 }

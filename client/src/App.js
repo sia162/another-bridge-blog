@@ -5,6 +5,7 @@ import Contact from './components/pages/contact/Contact';
 import Home from './components/pages/home/Home';
 import Footer from './components/footer/Footer';
 import FooterContact from './components/footer-contact/FooterContact';
+import Allblogpage from './components/pages/all-blogs-page/Allblogpage';
 
 function App() {
   return (
@@ -21,6 +22,9 @@ function App() {
           </Route>
           <Route exact path="/contact">
             <Contact />
+          </Route>
+          <Route exact path="/allblogs">
+            <Allblogpage />
           </Route>
         </Switch>
         <FooterContact />
