@@ -9,33 +9,6 @@
   --article-con-font: 'Cutive Mono', monospace;
 }
 
-.edgelines1::before {
-  content: '';
-  position: absolute;
-  height: 238.5vh;
-  /* min-height: 100%; */
-  width: 0.1vw;
-  background-color: rgba(209, 209, 209, 0.534);
-  left: 8vw;
-}
-
-.edgelines2::before {
-  content: '';
-  position: absolute;
-  height: 238.5vh;
-  width: 0.1vw;
-  background-color: rgba(209, 209, 209, 0.534);
-  right: 8vw;
-}
-.edgelines-h::before {
-  content: '';
-  position: absolute;
-  height: 0.1vh;
-  width: 150vw;
-  background-color: rgba(209, 209, 209, 0.534);
-  top: 10vh;
-}
-
 .max-width-s {
   width: 80vw;
 }

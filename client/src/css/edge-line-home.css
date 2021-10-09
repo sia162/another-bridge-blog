@@ -1,0 +1,20 @@
+.edgelines1::before {
+  content: '';
+  position: absolute;
+  height: 229.4vh;
+  /* min-height: 100%; */
+  width: 0.1vw;
+  background-color: rgba(209, 209, 209, 0.534);
+  left: 8vw;
+  top: 0px;
+}
+
+.edgelines2::before {
+  content: '';
+  position: absolute;
+  height: 229.4vh;
+  width: 0.1vw;
+  background-color: rgba(209, 209, 209, 0.534);
+  right: 8vw;
+  top: 0px;
+}

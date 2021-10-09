@@ -1,0 +1,8 @@
+.edgelines-h::before {
+  content: '';
+  position: absolute;
+  height: 0.1vh;
+  width: 150vw;
+  background-color: rgba(209, 209, 209, 0.534);
+  top: 10vh;
+}

@@ -1,0 +1,45 @@
+.contact-head {
+  padding-top: 50px;
+  font-family: var(--head-font);
+  font-size: 2.5rem;
+  text-align: center;
+  padding-bottom: 50px;
+  text-align: center;
+}
+
+.contact-section .line2 {
+  width: 30vw;
+  border: 1px solid;
+  color: rgb(15, 14, 14);
+  margin-top: -37px;
+  background: black;
+}
+
+.contact-form {
+  font-family: var(--content-font);
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 50px;
+}
+
+.c-box {
+  margin: 5px;
+}
+
+.contact-form input,
+textarea {
+  width: 480px;
+  padding: 2px 12px;
+}
+
+.contact-con p {
+  font-family: var(--article-con-font);
+  padding: 0px 261px;
+}
+
+.contact-con {
+  padding-top: 45px;
+}

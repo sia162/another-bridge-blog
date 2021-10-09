@@ -1,0 +1,8 @@
+/* FOOTER */
+.footer {
+  padding: 5px 0px;
+  text-align: center;
+  background: rgb(3, 3, 3);
+  color: white;
+  font-family: var(--content-font);
+}
