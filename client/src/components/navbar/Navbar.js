@@ -7,7 +7,7 @@ const Navbar = () => {
   return (
     <div>
       <div className="navigation max-width-s m-auto">
-        <Link to="/">
+        <Link className="link" to="/">
           <h2>Another Bridge</h2>
         </Link>
 

@@ -1,5 +1,6 @@
 import React from 'react';
 import './footercontact.css';
+import { Link } from 'react-router-dom';
 
 const FooterContact = () => {
   return (
@@ -47,30 +48,30 @@ const FooterContact = () => {
 
             <div className="all-icon-box">
               <div className="img d-icon">
-                <a href="#">
+                <Link to="#">
                   <i
                     className="fa fa-twitter"
                     style={{ fontSize: '18px', color: 'rgb(255, 255, 255)' }}
                   ></i>
-                </a>
+                </Link>
               </div>
 
               <div className="img d-icon">
-                <a href="#">
+                <Link to="#">
                   <i
                     className="fa fa-instagram"
                     style={{ fontSize: '18px', color: 'rgb(255, 255, 255)' }}
                   ></i>
-                </a>
+                </Link>
               </div>
 
               <div className="img d-icon">
-                <a href="#">
+                <Link to="#">
                   <i
                     className="fa fa-facebook"
                     style={{ fontSize: '18px', color: 'rgb(255, 255, 255)' }}
                   ></i>
-                </a>
+                </Link>
               </div>
             </div>
           </div>
