@@ -5,6 +5,10 @@ const User = require("../models/User");
 const { body, validationResult } = require("express-validator");
 const bcrypt = require("bcryptjs");
 
+// jwt authentication
+var jwt = require("jsonwebtoken");
+const JWT_SECRET = process.env.JWT_SECRET;
+
 // REGISTER: POST "/api/auth/register"
 router.post(
   "/register",
@@ -42,7 +46,17 @@ router.post(
         password: securePass,
       });
 
-      res.json({ user });
+      // jwt authentication
+      const data = {
+        user: {
+          id: user.id,
+          name: user.name,
+          email: user.email,
+        },
+      };
+      const authtoken = jwt.sign(data, JWT_SECRET); //return a token
+      success = true;
+      res.json({ success, authtoken, user });
     } catch (error) {
       console.error(error.message);
       res.status(500).send("Internal Server Error!");
@@ -81,7 +95,18 @@ router.post(
           .json({ success, error: "Try to login with correct credentials!" });
       }
 
-      res.json({ user });
+      // jwt authentication
+      const data = {
+        user: {
+          id: user.id,
+          name: user.name,
+          email: user.email,
+        },
+      };
+      const authtoken = jwt.sign(data, JWT_SECRET);
+      const success = true;
+
+      res.json({ success, authtoken, user });
     } catch (error) {
       console.error(error.message);
       res.status(500).send("Internal Server Error!");

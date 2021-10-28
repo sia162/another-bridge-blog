@@ -10,6 +10,10 @@ const CommmentSchema = new mongoose.Schema(
       type: String,
       required: true,
     },
+    userid: {
+      type: String,
+      required: true,
+    },
     name: {
       type: String,
       required: true,
