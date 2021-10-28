@@ -1,0 +1,40 @@
+.login-head {
+  padding-top: 50px;
+  font-family: var(--head-font);
+  font-size: 2.5rem;
+  text-align: center;
+  padding-bottom: 50px;
+  text-align: center;
+}
+
+.login-section .line2 {
+  width: 30vw;
+  border: 1px solid;
+  color: rgb(15, 14, 14);
+  margin-top: -37px;
+  background: black;
+}
+
+.login-form {
+  font-family: var(--content-font);
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 50px;
+  margin: 77px 10px;
+}
+
+.c-box {
+  margin: 5px;
+}
+
+.login-form input {
+  width: 480px;
+  padding: 2px 12px;
+}
+
+.login-btn {
+  margin-top: 20px;
+}

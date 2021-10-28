@@ -8,7 +8,6 @@ const Articles = () => {
     <div>
       <div className="article-section max-width-s m-auto">
         <div className="article-head">this has my story.</div>
-
         <Article />
       </div>
     </div>

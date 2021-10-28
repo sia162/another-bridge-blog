@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import './single.css';
 import img1 from '../../../images/a9.jpg';
+// import Comment from '../../comments/Comment';
 
 const Single = () => {
   useEffect(() => {
@@ -91,15 +92,27 @@ const Single = () => {
 
             <div className="comment-box">
               <div className="comment-head">leave your thoughts</div>
-              <textarea
-                className="comment"
-                name="comment"
-                id="comment"
-                cols="50"
-                rows="2"
-                placeholder="enter your comment"
-              ></textarea>
+              <form className="comment-form-box">
+                <input
+                  className="comment-email"
+                  type="email"
+                  placeholder="enter your email."
+                />
+                <textarea
+                  className="comment"
+                  name="comment"
+                  id="comment"
+                  cols="50"
+                  rows="2"
+                  placeholder="enter your comment"
+                ></textarea>
+              </form>
+              <button className="btn">Comment</button>
             </div>
+
+            {/* <div className="comment-section">
+              <Comment />
+            </div> */}
 
             <div className="alsoread">
               <div className="alsoread-head">RELATED POSTS</div>

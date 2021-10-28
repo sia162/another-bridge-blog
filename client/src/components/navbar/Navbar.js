@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './navbar.css';
 import '../../css/utils.css';
+import './navbar.css';
 
 const Navbar = () => {
   return (
@@ -13,13 +13,19 @@ const Navbar = () => {
 
         <ul className="nav-list">
           <li>
-            <Link to="/about">about alesa.</Link>
+            <Link to="/about">about aditi.</Link>
           </li>
           <li>
-            <Link to="/allblogs">all blogs.</Link>
+            <Link to="/allblogs">blogs.</Link>
           </li>
           <li>
             <Link to="/contact">let's talk.</Link>
+          </li>
+          <li>
+            <Link to="/register">be a reader.</Link>
+          </li>
+          <li>
+            <Link to="/login">login.</Link>
           </li>
         </ul>
 
@@ -31,7 +37,7 @@ const Navbar = () => {
               placeholder="Search Article"
               name="query"
             />
-            <button className="btn">Search</button>
+            <button className="btn search-btn">Search</button>
           </form>
         </div>
       </div>

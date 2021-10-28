@@ -35,6 +35,7 @@ app.use(express.json());
 app.use("/api/posts", require("./routes/posts"));
 app.use("/api/categories", require("./routes/categories"));
 app.use("/api/auth", require("./routes/auth"));
+app.use("/api/comment", require("./routes/comment"));
 
 app.listen(port, () => {
   console.log(`Aditi's Blog Backend is listening at http://localhost:${port}`);

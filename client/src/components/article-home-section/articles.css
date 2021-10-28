@@ -29,15 +29,17 @@
   /* new */
   width: 614.4px;
 }
-.shadow {
+.shadows {
   transition: all 0.2s ease-in;
   filter: grayscale(100%);
 }
+
 .article-con:hover {
-  box-shadow: -10px 11px 0px 2px #00000054 inset;
+  box-shadow: -10px -10px 0px 2px #00000054 inset;
 }
-.shadow:hover {
-  box-shadow: 10px -9px 0px 2px #00000054 inset;
+
+.shadows:hover {
+  box-shadow: 2px 11px 0rem 2px rgb(0 0 0 / 15%) inset;
   filter: none;
 }
 

@@ -76,3 +76,14 @@
   margin-top: 44px;
   background: black;
 }
+
+.comment-form-box {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  font-family: var(--article-con-font);
+}
+
+.comment-email {
+  padding: 1px 10px;
+}

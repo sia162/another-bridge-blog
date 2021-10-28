@@ -12,7 +12,7 @@ const Article = () => {
       <div className="all-articles">
         {/* start */}
 
-        <div className="shadow">
+        <div className="shadows">
           <div className="article-con">
             <img src={a1} alt="" loading="lazy" />
             <div className="con">
@@ -34,7 +34,7 @@ const Article = () => {
           </div>
         </div>
 
-        <div className="shadow">
+        <div className="shadows">
           <div className="article-con">
             <img src={a8} alt="" loading="lazy" />
             <div className="con">
