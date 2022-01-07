@@ -29,16 +29,33 @@ const Navbar = () => {
           </li>
         </ul>
 
-        <div className="right-nav">
-          <form action="/search.html" method="GET">
-            <input
-              className="form-input"
-              type="text"
-              placeholder="Search Article"
-              name="query"
-            />
-            <button className="btn search-btn">Search</button>
-          </form>
+        <div className="nav-con-icons">
+          <div className="con-icon">
+            <Link to="#">
+              <i
+                className="fa fa-twitter"
+                style={{ fontSize: '20px', color: 'black' }}
+              ></i>
+            </Link>
+          </div>
+
+          <div className="con-icon">
+            <Link to="#">
+              <i
+                className="fa fa-instagram"
+                style={{ fontSize: '20px', color: 'black' }}
+              ></i>
+            </Link>
+          </div>
+
+          <div className="con-icon">
+            <Link to="#">
+              <i
+                className="fa fa-facebook"
+                style={{ fontSize: '20px', color: 'black' }}
+              ></i>
+            </Link>
+          </div>
         </div>
       </div>
     </div>

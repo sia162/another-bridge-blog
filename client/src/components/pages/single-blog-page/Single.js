@@ -1,12 +1,34 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import './single.css';
 import img1 from '../../../images/a9.jpg';
+import { useLocation } from 'react-router';
 // import Comment from '../../comments/Comment';
 
 const Single = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+  const location = useLocation();
+  const pathtopost = location.pathname.split('/')[2];
+  const [post, setPost] = useState([]);
+
+  useEffect(() => {
+    // console.log(pathtopost);
+    const fetchpost = async () => {
+      try {
+        const res = await fetch(
+          `http://localhost:5000/api/posts/${pathtopost}`
+        );
+        const reponse = await res.json();
+        setPost(reponse);
+        // console.log(reponse);
+      } catch (error) {
+        console.log(error);
+      }
+    };
+    fetchpost();
+  }, [pathtopost]);
 
   return (
     <div>
@@ -17,7 +39,7 @@ const Single = () => {
             style={{
               background: `url(${img1})`,
               width: '40%',
-              marginTop: '15px',
+              marginTop: '20px',
               backgroundAttachment: 'fixed',
               backgroundRepeat: 'no-repeat',
               backgroundSize: 'contain',
@@ -25,67 +47,17 @@ const Single = () => {
           ></div>
 
           <div className="blog-con-box">
-            <div className="blogpost-head">blogpost heading.</div>
+            <div className="blogpost-head">{post.title}</div>
             <div className="cont-sign">
               <i>
-                <p> by Alesa Clare posted on 23 July 2020</p>
+                <p style={{ padding: '0px ', margin: '0px' }}>
+                  by {post.author} on {new Date(post.createdAt).toDateString()}{' '}
+                  {new Date(post.createdAt).toLocaleTimeString('en-US')}
+                </p>
               </i>
             </div>
             <div className="blog-content">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Aperiam quos natus nisi maiores dignissimos sit vitae eaque
-                nesciunt ex ipsa ullam sed aut, repudiandae doloremque animi
-                modi, distinctio impedit rerum dolore, eius praesentium quam
-                officia accusamus magni! Ea illum repudiandae, in voluptatum
-                veritatis facere cum incidunt dolores asperiores sit, impedit
-                maiores accusantium, voluptate consequatur quo corrupti totam
-                sunt quam vel porro reprehenderit dolorem. Tempora deserunt, eos
-                repudiandae quos itaque necessitatibus! Natus quos ipsam tempora
-                fugit excepturi inventore soluta dignissimos officia ut rerum
-                sapiente doloremque, velit, sit a.
-              </p>
-
-              <br />
-              <p>
-                Provident tempora, porro quo officiis nihil eveniet ducimus ea
-                doloribus sequi sit impedit, maxime eum alias veritatis!
-                Blanditiis accusantium adipisci recusandae totam ipsum tempore
-                harum repellendus aliquid. Impedit voluptate nobis nesciunt vero
-                laboriosam exercitationem, cumque illum deleniti ratione
-                temporibus quidem blanditiis magnam soluta at enim error
-                doloribus praesentium omnis rem voluptatem, ad assumenda atque
-                vel repudiandae? Itaque porro accusamus aperiam eos vel quaerat
-                molestiae et architecto similique magni deserunt expedita
-                doloremque eveniet voluptatum assumenda rem sint quasi quos
-                impedit earum iusto, illum excepturi! Ratione, porro unde
-                obcaecati reprehenderit tempora, quos consequuntur excepturi
-                sequi laudantium sapiente minima repudiandae.{' '}
-              </p>
-              <br />
-              <p>
-                Repellendus voluptate rem neque nemo explicabo nulla, tenetur
-                dolorem distinctio voluptas culpa eligendi eveniet, iusto
-                dolores perferendis quo, expedita magnam? Quod explicabo quia
-                distinctio ipsa sunt beatae qui eum deleniti quisquam laborum
-                dignissimos, repellat hic provident corrupti. Suscipit itaque
-                aliquid fugiat magni deserunt veniam alias dolore possimus,
-                exercitationem, aspernatur tempore dolores rerum soluta quaerat
-                magnam, aperiam labore nam. Voluptate impedit esse iusto
-                mollitia, culpa quasi ducimus eos illo. Voluptates saepe magnam
-                nihil, non laudantium numquam rem vel nemo dolore provident
-                tempore at debitis amet repellendus perferendis eum porro sed
-                enim iusto soluta adipisci. Nam obcaecati dolorem optio quidem
-                recusandae laborum, repudiandae enim placeat numquam rerum ut.
-                Adipisci, numquam dolorem cupiditate amet doloribus illum
-                praesentium omnis ipsum? Tenetur obcaecati officiis libero porro
-                tempora incidunt veritatis impedit repudiandae, eum quasi
-                provident numquam aliquid minima, temporibus quia explicabo
-                repellat nisi exercitationem atque ad rem sed.Totam beatae dolor
-                repellendus doloribus, iusto ea consequatur possimus, quis at
-                dolorum in nesciunt, molestias delectus rerum dolorem distinctio
-                veritatis earum.{' '}
-              </p>
+              <p>{post.desc}</p>
             </div>
 
             <div className="line2 max-width-s m-auto"></div>

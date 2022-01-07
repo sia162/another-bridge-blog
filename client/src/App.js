@@ -29,7 +29,7 @@ function App() {
           <Route exact path="/allblogs">
             <Allblogpage />
           </Route>
-          <Route exact path="/blog/:id">
+          <Route exact path="/post/:id">
             <Single />
           </Route>
           <Route exact path="/login">

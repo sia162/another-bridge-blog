@@ -24,6 +24,18 @@ router.get("/", async (req, res) => {
   }
 });
 
+// GET A POST: GET "/api/posts/:id"
+router.get("/:id", async (req, res) => {
+  try {
+    let post = await Post.findById(req.params.id);
+    res.status(200).json(post);
+  } catch (error) {
+    let postNotFound = true;
+    console.error(error.message);
+    res.status(500).send({ postNotFound });
+  }
+});
+
 //CREATE Post: POST "/api/posts/addpost"
 router.post("/addpost", async (req, res) => {
   try {

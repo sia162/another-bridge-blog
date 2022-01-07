@@ -31,7 +31,7 @@ const Article = ({ posts }) => {
                     {new Date(post.createdAt).toDateString()}{' '}
                     {new Date(post.createdAt).toLocaleTimeString('en-US')}
                   </p>
-                  <Link to="/blog/:id">
+                  <Link to={`/post/${post._id}`}>
                     <button className="btn">Read More</button>
                   </Link>
                 </div>
@@ -59,7 +59,7 @@ const Article = ({ posts }) => {
                     {new Date(post.createdAt).toDateString()}{' '}
                     {new Date(post.createdAt).toLocaleTimeString('en-US')}
                   </p>
-                  <Link to="/blog/:id">
+                  <Link to={`/post/${post._id}`}>
                     <button className="btn">Read More</button>
                   </Link>
                 </div>
