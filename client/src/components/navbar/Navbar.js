@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import '../../css/utils.css';
 import './navbar.css';
+import './respNav.css';
 
 const Navbar = () => {
   return (
@@ -21,12 +22,12 @@ const Navbar = () => {
           <li>
             <Link to="/contact">let's talk.</Link>
           </li>
-          <li>
+          {/* <li>
             <Link to="/register">be a reader.</Link>
-          </li>
-          <li>
+          </li> */}
+          {/* <li>
             <Link to="/login">login.</Link>
-          </li>
+          </li> */}
         </ul>
 
         <div className="nav-con-icons">

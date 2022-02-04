@@ -26,7 +26,8 @@
   transition: all 0.2s ease-in;
 
   /* new */
-  width: 614.4px;
+  width: 558.55px;
+  /* height: 57vh; */
 }
 .shadows {
   transition: all 0.2s ease-in;
@@ -68,5 +69,5 @@
   padding-bottom: 20px;
   text-align: center;
   font-family: var(--article-con-font);
-  font-size: 0.9rem;
+  font-size: 12px;
 }

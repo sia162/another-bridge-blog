@@ -18,7 +18,7 @@ const FooterContact = () => {
           <div className="d-con">
             <div className="d-head">author.</div>
             <div className="d-sub">
-              <p>Alesa Clare</p>
+              <p>Adit Verma</p>
             </div>
           </div>
 
@@ -73,6 +73,16 @@ const FooterContact = () => {
                   ></i>
                 </Link>
               </div>
+            </div>
+          </div>
+
+          {/* TODO */}
+          <div className="d-con">
+            <div className="d-head">only for author.</div>
+            <div className="d-sub">
+              <Link to="#">
+                <p>write</p>
+              </Link>
             </div>
           </div>
         </div>
